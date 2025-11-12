@@ -1,6 +1,7 @@
 # https://github.com/iiTzFreddy/lab11-FR-JW
 # Partner 1: Freddy Rives
 # Partner 2: John Watson
+import math
 import unittest
 from calculator import *
 

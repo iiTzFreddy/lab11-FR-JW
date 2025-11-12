@@ -30,3 +30,4 @@ def log(a, b):
         return None# use math library + raise ValueError
 
 def exp(a, b): return a ** b
+
