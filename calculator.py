@@ -1,9 +1,7 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
+# https://github.com/iiTzFreddy/lab11-FR-JW
+# Partner 1: Freddy Rives
+# Partner 2: John Watson
 
-One function per operation, in order.
-"""
 import math
 def square_root(a):
     try:
