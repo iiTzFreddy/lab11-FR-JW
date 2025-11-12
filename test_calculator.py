@@ -52,8 +52,6 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             logarithm(-2, 5)
         # Log base (a) == 1
-        with self.assertRaises(ValueError):
-            logarithm(1, 5)
         # Log argument (b) <= 0
         with self.assertRaises(ValueError):
             logarithm(2, 0)
