@@ -97,7 +97,7 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             logarithm(-1, 3)
 
-    ##########################
+    ###########################
 #
 # Do not touch this
 if __name__ == "__main__":
