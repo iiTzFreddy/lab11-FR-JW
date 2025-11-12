@@ -98,7 +98,7 @@ class TestCalculator(unittest.TestCase):
             log(-1, 3)
 
     ##########################
-
+#
 # Do not touch this
 if __name__ == "__main__":
     unittest.main()
