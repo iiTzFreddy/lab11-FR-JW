@@ -3,6 +3,11 @@
 # Partner 2: John Watson
 
 import math
+
+# First example
+import math
+def add(a, b): a + b
+
 def square_root(a):
     try:
         return math.sqrt(a)
@@ -12,27 +17,16 @@ def square_root(a):
 def hypotenuse(a,b):
     math.hypot(a,b)
 
-def add(a, b): 
-    return a+b
 
-def sub(a, b):
-    return a-b
+def sub(a, b): a - b
 
-def mul(a, b):
-    return a*b
+def mul(a, b): a * b
 
-def div(a, b):
-    try:
-        return b/a
-    except ZeroDivisionError:
-        return None
 
 def log(a, b):
     try:
         return math.log(b,a)
     except ValueError:
-        return None
+        return None# use math library + raise ValueError
 
-def exp(a, b):
-    return pow(a,b)
-
+def exp(a, b): return a ** b
