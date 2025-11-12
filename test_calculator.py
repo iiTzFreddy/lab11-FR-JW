@@ -60,10 +60,10 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             log(2, -5)
 
-    self.assertEqual(hypotenuse(3, 4), 5.0)
-    self.assertEqual(hypotenuse(-3, 4), 5.0)
-    self.assertEqual(hypotenuse(5, 12), 13.0)
-    self.assertAlmostEqual(hypotenuse(1, 1), math.sqrt(2))
+        self.assertEqual(hypotenuse(3, 4), 5.0)
+        self.assertEqual(hypotenuse(-3, 4), 5.0)
+        self.assertEqual(hypotenuse(5, 12), 13.0)
+        self.assertAlmostEqual(hypotenuse(1, 1), math.sqrt(2))
 
     def test_sqrt(self): # 3 assertions
         self.assertEqual(square_root(9), 3.0)
@@ -72,6 +72,30 @@ class TestCalculator(unittest.TestCase):
         # Test ValueError for negative input
         with self.assertRaises(ValueError):
             square_root(-1)
+
+    def test_add(self):
+        self.assertEqual(add(1, 2), 3)
+        self.assertEqual(add(1, -2), -1)
+
+    def test_subtract(self):
+        self.assertEqual(sub(1, 2), -1)
+        self.assertEqual(sub(2, 1), 1)
+
+    def divide_by_zero(self):
+        with self.assertRaises(ZeroDivisionError):
+            div(2 / 0)
+
+    def test_logarith(self):
+        self.assertEqual(log(3, 9), 2)
+        self.assertEqual(log(2, 8), 3)
+
+    def test_log_invalid_base(self):
+        with self.assertRaises(ValueError):
+            log(8, 1)
+        with self.assertRaises(ValueError):
+            log(0, 3)
+        with self.assertRaises(ValueError):
+            log(-1, 3)
 
     ##########################
 
