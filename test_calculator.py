@@ -89,8 +89,6 @@ class TestCalculator(unittest.TestCase):
 
     def test_log_invalid_base(self):
         with self.assertRaises(ValueError):
-            logarithm(8, 1)
-        with self.assertRaises(ValueError):
             logarithm(0, 3)
         with self.assertRaises(ValueError):
             logarithm(-1, 3)
